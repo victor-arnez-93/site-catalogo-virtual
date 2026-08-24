@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#163c3a">
+    <meta name="description" content="Catálogo virtual de brindes corporativos personalizados. Explore categorias, selecione produtos e solicite seu orçamento pelo WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sua Marca | Brindes Corporativos">
+    <meta property="og:description" content="Brindes personalizados para transformar marcas em experiências memoráveis.">
+    <title>Sua Marca | Brindes Corporativos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="home">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <div class="demo-bar">
+        <div class="container demo-bar__content">
+            <span><span class="demo-dot"></span> Modelo conceitual de catálogo virtual</span>
+            <span class="demo-bar__desktop">Conteúdo demonstrativo e totalmente personalizável</span>
+        </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container header__inner">
+            <a class="brand" href="index.html" aria-label="Sua Marca - Página inicial">
+                <span class="brand__symbol" aria-hidden="true">S</span>
+                <span class="brand__text">
+                    <strong>SUA MARCA</strong>
+                    <small>brindes corporativos</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+                <a class="is-active" href="index.html">Início</a>
+                <a href="#categorias">Categorias</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div class="header__actions">
+                <button class="selection-button" type="button" data-open-selection aria-label="Abrir seleção de produtos">
+                    <span>Minha seleção</span>
+                    <b data-selection-count>0</b>
+                </button>
+                <a class="admin-link" href="#" data-admin-link>Área restrita</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero">
+            <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+            <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <span class="eyebrow hero__eyebrow">Sua marca presente em cada detalhe</span>
+                    <h1>Brindes que criam <em>conexões</em> e deixam sua marca.</h1>
+                    <p>Explore opções personalizáveis para eventos, campanhas, equipes e clientes. Escolha seus favoritos e solicite uma cotação de forma rápida e organizada.</p>
+                    <div class="hero__actions">
+                        <a class="button button--primary" href="catalogo.html">
+                            Explorar catálogo
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                        <a class="button button--ghost" href="#como-funciona">Como funciona</a>
+                    </div>
+                    <div class="hero__trust" aria-label="Diferenciais">
+                        <span><b>+15</b> categorias</span>
+                        <span><b>100%</b> personalizável</span>
+                        <span><b>Atendimento</b> consultivo</span>
+                    </div>
+                </div>
+
+                <div class="hero__visual" data-parallax-visual>
+                    <div class="hero__image-wrap">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1200&q=88" alt="Composição de presentes corporativos personalizados">
+                    </div>
+                    <div class="hero__floating hero__floating--top">
+                        <span class="hero__floating-icon">✦</span>
+                        <div><small>Ideias para</small><strong>todas as ocasiões</strong></div>
+                    </div>
+                    <div class="hero__floating hero__floating--bottom">
+                        <div class="avatar-stack" aria-hidden="true"><i></i><i></i><i></i></div>
+                        <div><strong>Orçamento personalizado</strong><small>Direto pelo WhatsApp</small></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container hero__marquee" aria-hidden="true">
+                <div class="hero__marquee-track">
+                    <span>BRINDES CORPORATIVOS</span><i>✦</i><span>PERSONALIZAÇÃO</span><i>✦</i><span>EVENTOS</span><i>✦</i><span>KITS ESPECIAIS</span><i>✦</i><span>BRINDES CORPORATIVOS</span><i>✦</i><span>PERSONALIZAÇÃO</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section categories-section" id="categorias">
+            <div class="container">
+                <div class="section-heading reveal-up">
+                    <div>
+                        <span class="eyebrow">Encontre mais rápido</span>
+                        <h2>Explore por categoria</h2>
+                    </div>
+                    <p>Uma vitrine organizada para você chegar ao produto ideal sem percorrer páginas e páginas de um catálogo convencional.</p>
+                </div>
+                <div class="categories-grid" id="home-categories" aria-live="polite"></div>
+                <div class="section-action reveal-up">
+                    <a class="text-link" href="catalogo.html">Ver todas as categorias <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section featured-section">
+            <div class="container">
+                <div class="section-heading section-heading--light reveal-up">
+                    <div>
+                        <span class="eyebrow">Seleção especial</span>
+                        <h2>Produtos em destaque</h2>
+                    </div>
+                    <p>Algumas possibilidades para inspirar sua próxima ação, evento ou presente corporativo.</p>
+                </div>
+                <div class="products-grid products-grid--home" id="home-products" aria-live="polite"></div>
+                <div class="section-action reveal-up">
+                    <a class="button button--light" href="catalogo.html">Acessar catálogo completo <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section experience-section">
+            <div class="container experience-grid">
+                <div class="experience__media reveal-left">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=88" alt="Caneca e materiais personalizados em ambiente de trabalho">
+                    <div class="experience__badge">
+                        <strong>Do conceito à entrega</strong>
+                        <span>Atendimento próximo em cada etapa</span>
+                    </div>
+                </div>
+                <div class="experience__content reveal-right">
+                    <span class="eyebrow">Mais do que um produto</span>
+                    <h2>Uma experiência pensada para representar a sua empresa.</h2>
+                    <p>Você escolhe os produtos que fazem sentido para sua ação. Nossa equipe analisa quantidade, personalização e prazo para preparar uma proposta sob medida.</p>
+                    <ul class="benefits-list">
+                        <li><span>01</span><div><strong>Curadoria personalizada</strong><small>Opções alinhadas ao seu objetivo e público.</small></div></li>
+                        <li><span>02</span><div><strong>Personalização sob medida</strong><small>Cores, técnicas e acabamentos avaliados para cada item.</small></div></li>
+                        <li><span>03</span><div><strong>Atendimento consultivo</strong><small>Um especialista acompanha sua solicitação pelo WhatsApp.</small></div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section process-section" id="como-funciona">
+            <div class="container">
+                <div class="section-heading section-heading--center reveal-up">
+                    <div>
+                        <span class="eyebrow">Prático e transparente</span>
+                        <h2>Como solicitar seu orçamento</h2>
+                    </div>
+                    <p>Sem carrinho, pagamento ou preço genérico. Cada projeto é avaliado conforme as necessidades da sua empresa.</p>
+                </div>
+                <div class="process-grid">
+                    <article class="process-card reveal-up">
+                        <span class="process-card__number">01</span>
+                        <div class="process-card__icon">⌕</div>
+                        <h3>Explore</h3>
+                        <p>Navegue pelas categorias ou pesquise diretamente pelo produto desejado.</p>
+                    </article>
+                    <article class="process-card reveal-up">
+                        <span class="process-card__number">02</span>
+                        <div class="process-card__icon">＋</div>
+                        <h3>Selecione</h3>
+                        <p>Adicione uma ou várias opções à sua lista de interesse.</p>
+                    </article>
+                    <article class="process-card reveal-up">
+                        <span class="process-card__number">03</span>
+                        <div class="process-card__icon">↗</div>
+                        <h3>Solicite</h3>
+                        <p>Envie sua seleção pelo WhatsApp e receba uma cotação personalizada.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="contato">
+            <div class="container">
+                <div class="cta-card reveal-up">
+                    <div class="cta-card__content">
+                        <span class="eyebrow">Vamos criar algo marcante?</span>
+                        <h2>Encontre o brinde ideal para sua próxima ação.</h2>
+                        <p>Explore o catálogo ou fale com nossa equipe para receber sugestões personalizadas.</p>
+                    </div>
+                    <div class="cta-card__actions">
+                        <a class="button button--cream" href="catalogo.html">Explorar produtos</a>
+                        <a class="button button--outline-light" href="#" data-whatsapp-generic>Falar no WhatsApp <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="cta-card__orb" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a class="brand brand--footer" href="index.html">
+                    <span class="brand__symbol">S</span>
+                    <span class="brand__text"><strong>SUA MARCA</strong><small>brindes corporativos</small></span>
+                </a>
+                <p>Brindes personalizados para aproximar empresas, equipes e clientes.</p>
+            </div>
+            <div class="footer__column"><strong>Navegação</strong><a href="index.html">Início</a><a href="catalogo.html">Catálogo</a><a href="#como-funciona">Como funciona</a></div>
+            <div class="footer__column"><strong>Atendimento</strong><a href="#" data-whatsapp-generic>WhatsApp</a><a href="mailto:contato@suamarca.com.br">contato@suamarca.com.br</a><span>Seg. a sex. · 8h às 18h</span></div>
+            <div class="footer__column"><strong>Empresa</strong><a href="#contato">Contato</a><a href="#" data-admin-link>Área restrita</a><span>Tatuí · São Paulo</span></div>
+        </div>
+        <div class="container footer__bottom">
+            <span>© <span data-current-year></span> Sua Marca. Todos os direitos reservados.</span>
+            <span>Modelo conceitual desenvolvido pela CRV Soluções em TI.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/dados-demo.js"></script>
+    <script src="js/catalog-service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
