@@ -1,4 +1,4 @@
-.catalog-intro { padding: 45px 0 54px; background: linear-gradient(135deg, #f3ede3, #ebe2d5); }
+.catalog-intro { padding: 45px 0 54px; background: linear-gradient(135deg, #f1f4f9, #e4eaf3); }
 .breadcrumbs, .product-breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; color: #82908e; font-size: 11px; }
 .breadcrumbs a, .product-breadcrumbs a { transition: color .2s ease; }
 .breadcrumbs a:hover, .product-breadcrumbs a:hover { color: var(--orange-dark); }
@@ -27,7 +27,7 @@
 .catalog-meta p strong { color: var(--ink); }
 .catalog-meta button { padding: 0; color: var(--orange-dark); background: transparent; border: 0; border-bottom: 1px solid currentColor; cursor: pointer; font-size: 11px; font-weight: 700; }
 .catalog-grid { min-height: 200px; }
-.empty-state { min-height: 420px; place-content: center; justify-items: center; padding: 50px 20px; background: #f8f4ee; border: 1px dashed #d8d0c4; border-radius: 24px; text-align: center; }
+.empty-state { min-height: 420px; place-content: center; justify-items: center; padding: 50px 20px; background: #f4f7fb; border: 1px dashed #ccd5e3; border-radius: 24px; text-align: center; }
 .empty-state:not([hidden]) { display: grid; }
 .empty-state > span { width: 60px; height: 60px; display: grid; place-items: center; color: var(--orange-dark); background: var(--cream-2); border-radius: 50%; font-size: 30px; }
 .empty-state h2 { margin: 17px 0 6px; color: var(--ink); font-size: 26px; }

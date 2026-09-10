@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#163c3a">
-    <meta name="description" content="Explore o catálogo de brindes corporativos personalizados por categoria.">
-    <title>Catálogo | Sua Marca Brindes</title>
+    <meta name="theme-color" content="#003887">
+    <meta name="description" content="Explore uma demonstração de catálogo virtual com categorias, preços, disponibilidade e variações.">
+    <title>Catálogo | Demonstração CRV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body data-page="catalogo">
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-    <div class="demo-bar"><div class="container demo-bar__content"><span><span class="demo-dot"></span> Modelo conceitual de catálogo virtual</span><span class="demo-bar__desktop">Conteúdo demonstrativo e totalmente personalizável</span></div></div>
+    <div class="demo-bar"><div class="container demo-bar__content"><span><span class="demo-dot"></span> Demonstração oficial CRV</span><span class="demo-bar__desktop">Estrutura adaptável a diferentes negócios</span></div></div>
 
     <header class="site-header" id="site-header">
         <div class="container header__inner">
-            <a class="brand" href="index.html" aria-label="Sua Marca - Página inicial"><span class="brand__symbol">S</span><span class="brand__text"><strong>SUA MARCA</strong><small>brindes corporativos</small></span></a>
+            <a class="brand" href="index.html" data-brand-home aria-label="Catálogo Demonstração - Página inicial"><span class="brand__symbol" data-business-symbol>C</span><span class="brand__text"><strong data-business-short-name>CATÁLOGO DEMO</strong><small data-business-descriptor>por CRV Soluções em TI</small></span></a>
             <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
-            <nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a class="is-active" href="catalogo.html">Catálogo</a><a href="index.html#como-funciona">Como funciona</a><a href="index.html#contato">Contato</a></nav>
+            <nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a class="is-active" href="catalogo.html">Catálogo</a><a href="index.html#como-funciona">Como funciona</a><a href="index.html#contato">Contato</a><a class="nav-admin" href="#" data-admin-link>Área restrita</a></nav>
             <div class="header__actions"><button class="selection-button" type="button" data-open-selection><span>Minha seleção</span><b data-selection-count>0</b></button><a class="admin-link" href="#" data-admin-link>Área restrita</a></div>
         </div>
     </header>
@@ -31,8 +31,8 @@
             <div class="container">
                 <nav class="breadcrumbs" aria-label="Navegação estrutural"><a href="index.html">Início</a><span>/</span><strong>Catálogo</strong></nav>
                 <div class="catalog-intro__content">
-                    <div><span class="eyebrow">Todas as possibilidades</span><h1>Encontre o produto ideal</h1></div>
-                    <p>Pesquise, filtre e monte sua seleção. Os valores são preparados de acordo com quantidade, personalização e prazo.</p>
+                    <div><span class="eyebrow">Produtos demonstrativos</span><h1>Encontre o que procura</h1></div>
+                    <p>Pesquise, filtre e monte sua seleção. Preços, disponibilidade e opções aparecem conforme a regra de cada produto.</p>
                 </div>
             </div>
         </section>
@@ -42,7 +42,7 @@
                 <div class="catalog-toolbar">
                     <label class="search-box" for="catalog-search">
                         <span aria-hidden="true">⌕</span>
-                        <input id="catalog-search" type="search" placeholder="Buscar por produto, código ou material..." autocomplete="off">
+                        <input id="catalog-search" type="search" placeholder="Buscar por produto, código, atributo ou categoria..." autocomplete="off">
                         <kbd>ESC</kbd>
                     </label>
                     <label class="sort-box" for="catalog-sort"><span>Ordenar por</span><select id="catalog-sort"><option value="featured">Destaques</option><option value="name-asc">Nome: A–Z</option><option value="newest">Lançamentos</option></select></label>
@@ -65,15 +65,15 @@
 
         <section class="catalog-help">
             <div class="container catalog-help__card">
-                <div><span class="eyebrow">Não encontrou o que procura?</span><h2>Conte sua ideia para nossa equipe.</h2><p>Podemos consultar outras opções e indicar produtos alinhados à sua necessidade.</p></div>
-                <a class="button button--primary" href="#" data-whatsapp-generic>Falar com um especialista <span aria-hidden="true">↗</span></a>
+                <div><span class="eyebrow">Catálogo sob medida</span><h2>Esta estrutura se adapta ao seu negócio.</h2><p>Categorias, produtos, identidade visual e recursos são definidos conforme a necessidade de cada empresa.</p></div>
+                <a class="button button--primary" href="#" data-whatsapp-generic>Solicitar uma demonstração <span aria-hidden="true">↗</span></a>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer__grid"><div class="footer__brand"><a class="brand brand--footer" href="index.html"><span class="brand__symbol">S</span><span class="brand__text"><strong>SUA MARCA</strong><small>brindes corporativos</small></span></a><p>Brindes personalizados para aproximar empresas, equipes e clientes.</p></div><div class="footer__column"><strong>Navegação</strong><a href="index.html">Início</a><a href="catalogo.html">Catálogo</a><a href="index.html#como-funciona">Como funciona</a></div><div class="footer__column"><strong>Atendimento</strong><a href="#" data-whatsapp-generic>WhatsApp</a><a href="mailto:contato@suamarca.com.br">contato@suamarca.com.br</a><span>Seg. a sex. · 8h às 18h</span></div><div class="footer__column"><strong>Empresa</strong><a href="index.html#contato">Contato</a><a href="#" data-admin-link>Área restrita</a><span>Tatuí · São Paulo</span></div></div>
-        <div class="container footer__bottom"><span>© <span data-current-year></span> Sua Marca. Todos os direitos reservados.</span><span>Modelo conceitual desenvolvido pela CRV Soluções em TI.</span></div>
+        <div class="container footer__grid"><div class="footer__brand"><a class="brand brand--footer" href="index.html" data-brand-home><span class="brand__symbol" data-business-symbol>C</span><span class="brand__text"><strong data-business-short-name>CATÁLOGO DEMO</strong><small data-business-descriptor>por CRV Soluções em TI</small></span></a><p data-business-description>Uma vitrine digital adaptável a diferentes negócios.</p></div><div class="footer__column"><strong>Navegação</strong><a href="index.html">Início</a><a href="catalogo.html">Catálogo</a><a href="index.html#como-funciona">Como funciona</a></div><div class="footer__column"><strong>Atendimento</strong><a href="#" data-whatsapp-generic>WhatsApp</a><a href="mailto:contato@crvsolucoesemti.com.br" data-business-email>contato@crvsolucoesemti.com.br</a><span data-business-hours>Seg. a sex. · 8h às 18h</span></div><div class="footer__column"><strong>Empresa</strong><a href="index.html#contato">Contato</a><a href="#" data-admin-link>Área restrita</a><span data-business-address>Tatuí · São Paulo</span></div></div>
+        <div class="container footer__bottom"><span>© <span data-current-year></span> <span data-business-name>Catálogo Demonstração</span>.</span><span>CRV-CATALOGO-COMMERCE · BASE 1.0</span></div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>

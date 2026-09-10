@@ -19,6 +19,7 @@
     .main-nav a { padding: 12px 14px; border-radius: 10px; }
     .main-nav a:hover, .main-nav a.is-active { background: var(--cream); }
     .main-nav a::after { display: none; }
+    .main-nav .nav-admin { display: block; }
     .header__actions { order: 2; }
     .nav-toggle { order: 3; }
     .hero { padding-top: 45px; }
@@ -113,6 +114,8 @@
     .product-section { padding-top: 22px; }
     .product-gallery__main { aspect-ratio: 1 / 1; border-radius: 20px; }
     .product-info h1 { font-size: clamp(35px, 10vw, 48px); }
+    .product-commercial { align-items: start; gap: 18px 28px; }
+    .product-variants__heading { align-items: start; display: grid; gap: 3px; }
     .product-quote__heading { align-items: start; }
     .product-quote__actions { grid-template-columns: 1fr; }
     .related-section .section-heading .text-link { display: none; }
@@ -152,6 +155,7 @@
     .product-info__top { align-items: start; }
     .product-info__top span { max-width: 190px; }
     .product-specs { grid-template-columns: 1fr; }
+    .product-variants__grid { grid-template-columns: 1fr; }
     .product-quote { padding: 20px 16px; }
     .product-quote__heading { display: grid; }
     .quantity-control { width: 132px; }

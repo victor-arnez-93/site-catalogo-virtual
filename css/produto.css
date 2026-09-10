@@ -18,15 +18,25 @@
 .product-info__lead { margin-bottom: 19px; font-size: 16px; line-height: 1.75; }
 .product-tags { display: flex; flex-wrap: wrap; gap: 7px; }
 .product-tags span { padding: 6px 10px; color: var(--ink-soft); background: var(--sage-light); border-radius: 999px; font-size: 9px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.product-commercial { margin: 28px 0 0; display: flex; align-items: center; flex-wrap: wrap; gap: 34px; padding: 20px 22px; background: #f4f7fb; border: 1px solid var(--line); border-radius: 18px; }
+.product-commercial > div { display: grid; gap: 4px; }
+.product-commercial small, .product-variants__heading > small { color: #7d899b; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.product-commercial__price strong { color: var(--ink); font-family: var(--font-title); font-size: 28px; line-height: 1; }
+.product-commercial__price span { color: var(--muted); font-size: 10px; }
+.product-commercial__availability strong { font-size: 12px; }
 .product-specs { margin: 30px 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .product-specs > div { min-height: 90px; display: grid; align-content: center; padding: 15px 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .product-specs small, .product-colors > small { color: #919b99; font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .product-specs strong { margin-top: 4px; color: var(--ink); font-family: var(--font-title); font-size: 12px; line-height: 1.4; }
-.product-colors { margin-bottom: 30px; }
-.product-colors > div { margin: 9px 0 7px; display: flex; flex-wrap: wrap; gap: 8px; }
-.product-colors > div span { padding: 7px 12px; color: var(--ink); background: var(--cream); border: 1px solid var(--line); border-radius: 999px; font-size: 11px; font-weight: 600; }
-.product-colors p { margin: 0; font-size: 10px; }
-.product-quote { padding: 25px; background: #f3ede3; border-radius: 22px; }
+.product-variants { margin-bottom: 28px; padding: 22px; background: var(--white); border: 1px solid var(--line); border-radius: 18px; }
+.product-variants__heading { margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.product-variants__heading span { color: var(--muted); font-size: 10px; }
+.product-variants__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.product-variants__grid label { display: grid; gap: 6px; }
+.product-variants__grid label > span { color: var(--ink); font-size: 11px; font-weight: 700; }
+.product-variants__grid select { width: 100%; min-height: 45px; padding: 0 38px 0 12px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 11px; outline: none; }
+.product-variants__grid select:focus { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(0, 56, 135, .1); }
+.product-quote { padding: 25px; background: #eef2f7; border-radius: 22px; }
 .product-quote__heading { display: flex; align-items: end; justify-content: space-between; gap: 25px; }
 .product-quote__heading > div { display: grid; }
 .product-quote__heading strong { color: var(--ink); font-family: var(--font-title); font-size: 17px; }
@@ -43,7 +53,7 @@
 .product-quote__actions { margin-top: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
 .product-quote__actions .button { min-height: 48px; padding-inline: 15px; font-size: 12px; }
 .product-quote__disclaimer { margin: 12px 0 0; font-size: 9px; line-height: 1.5; text-align: center; }
-.related-section { padding-top: 80px; background: #f3ede3; }
+.related-section { padding-top: 80px; background: #eef2f7; }
 .related-section .section-heading { align-items: center; }
 .related-section .section-heading h2 { font-size: clamp(34px, 4vw, 49px); }
 .product-not-found { min-height: 510px; display: grid; place-content: center; justify-items: center; padding: 50px 20px; text-align: center; }

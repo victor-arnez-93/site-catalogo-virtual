@@ -23,7 +23,9 @@
         const normalizedSearch = window.CatalogService.normalize(state.search);
         const filtered = products.filter(product => {
             const matchesCategory = state.category === "todos" || product.category === state.category;
-            const searchTarget = window.CatalogService.normalize([product.name, product.code, product.shortDescription, product.materials, ...(product.tags || [])].join(" "));
+            const specs = (product.specs || []).flatMap(spec => [spec.label, spec.value]);
+            const variants = (product.variants || []).flatMap(variant => [variant.name, ...(variant.options || [])]);
+            const searchTarget = window.CatalogService.normalize([product.name, product.code, product.shortDescription, ...specs, ...variants, ...(product.tags || [])].join(" "));
             return matchesCategory && (!normalizedSearch || searchTarget.includes(normalizedSearch));
         });
 

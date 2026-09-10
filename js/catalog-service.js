@@ -34,9 +34,10 @@
     };
 
     /*
-     * Esta camada isola o front-end da fonte de dados.
-     * Na versão SaaS, o provider abaixo será trocado por consultas ao Supabase,
-     * sempre filtradas pelo companySlug e protegidas por RLS.
+     * Esta camada isola o front-end da fonte de dados. No Pacote B, o provider
+     * pode ser substituído pela fonte usada pela área administrativa. Uma
+     * evolução multicliente deve sempre filtrar os dados pela empresa atual e
+     * aplicar as regras de segurança no servidor/banco escolhido.
      */
     const provider = demoProvider;
 
