@@ -1,4 +1,9 @@
-/* Conteúdo enxuto para demonstrar segmentos e regras comerciais diferentes. */
+/*
+ * DADOS ILUSTRATIVOS DO CATÁLOGO
+ *
+ * AVISO: substitua este conteúdo pelos dados do cliente antes da publicação.
+ * Não altere os nomes das propriedades sem revisar catalog-service.js.
+ */
 window.CATALOGO_DEMO = Object.freeze({
     categories: [
         {
@@ -50,9 +55,9 @@ window.CATALOGO_DEMO = Object.freeze({
                 "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=88"
             ],
             shortDescription: "Cerâmica com acabamento fosco e desenho minimalista.",
-            description: "Um produto simples, apresentado com preço, opções de cor e capacidade. A estrutura pode ser adaptada aos atributos utilizados por cada negócio.",
+            description: "Caneca de cerâmica com linhas limpas, toque suave e acabamento fosco. Disponível em cores neutras e duas opções de capacidade para diferentes rotinas.",
             price: 49.9,
-            priceNote: "Preço demonstrativo por unidade",
+            priceNote: "Valor por unidade",
             availability: { status: "available", label: "Disponível" },
             specs: [
                 { label: "Material", value: "Cerâmica" },
@@ -76,9 +81,9 @@ window.CATALOGO_DEMO = Object.freeze({
             image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=88",
             gallery: ["https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=88"],
             shortDescription: "Iluminação direcionável para mesa ou cabeceira.",
-            description: "Exemplo de item com escolha de acabamento e voltagem. O catálogo pode exibir especificações comerciais sem transformar a experiência em um checkout.",
+            description: "Luminária compacta com foco direcionável para leitura, estudo ou trabalho. Escolha o acabamento e a voltagem antes de enviar sua seleção.",
             price: 129.9,
-            priceNote: "Preço demonstrativo",
+            priceNote: "Valor anunciado",
             availability: { status: "limited", label: "Últimas unidades" },
             specs: [
                 { label: "Material", value: "Metal e polímero" },
@@ -102,9 +107,9 @@ window.CATALOGO_DEMO = Object.freeze({
             image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=88",
             gallery: ["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=88"],
             shortDescription: "Modelagem confortável em algodão de toque macio.",
-            description: "Demonstra como cores e tamanhos podem ser tratados como variações obrigatórias antes de o item ser adicionado à seleção.",
+            description: "Camiseta de algodão com modelagem regular e toque macio. Uma peça versátil, disponível em cores essenciais e tamanhos variados.",
             price: 69.9,
-            priceNote: "Preço demonstrativo por unidade",
+            priceNote: "Valor por unidade",
             availability: { status: "available", label: "Disponível" },
             specs: [
                 { label: "Material", value: "Algodão" },
@@ -128,7 +133,7 @@ window.CATALOGO_DEMO = Object.freeze({
             image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=88",
             gallery: ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=88"],
             shortDescription: "Organização interna e modelos para rotinas diferentes.",
-            description: "Produto demonstrativo com valor sob consulta. A negociação pode continuar pelo WhatsApp mesmo quando o preço não deve ser publicado.",
+            description: "Mochila resistente com compartimentos internos e espaço protegido para notebook. Consulte as opções de capacidade, modelo e cor disponíveis.",
             price: null,
             priceNote: "Valor sob consulta",
             availability: { status: "made-to-order", label: "Sob encomenda" },
@@ -154,9 +159,9 @@ window.CATALOGO_DEMO = Object.freeze({
             image: "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=1200&q=88",
             gallery: ["https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=1200&q=88"],
             shortDescription: "Capa rígida, elástico e miolo pautado.",
-            description: "Exemplo de produto com medida, acabamento e disponibilidade limitada, sem depender de atributos exclusivos de um segmento.",
+            description: "Caderno de capa rígida com fechamento por elástico e páginas pautadas. Disponível em duas medidas e acabamentos para estudo ou trabalho.",
             price: 54.9,
-            priceNote: "Preço demonstrativo",
+            priceNote: "Valor anunciado",
             availability: { status: "limited", label: "Estoque limitado" },
             specs: [
                 { label: "Material", value: "Papel e capa rígida" },
@@ -180,9 +185,9 @@ window.CATALOGO_DEMO = Object.freeze({
             image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=88",
             gallery: ["https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=88"],
             shortDescription: "Áudio sem fio com diferentes configurações.",
-            description: "Produto com preço e escolha de modelo. Serve para demonstrar especificações técnicas apresentadas de forma clara e comercial.",
+            description: "Fone sem fio com conexão estável, carregamento USB-C e autonomia para acompanhar a rotina. Escolha o modelo e a cor desejados.",
             price: 149.9,
-            priceNote: "Preço demonstrativo",
+            priceNote: "Valor anunciado",
             availability: { status: "available", label: "Disponível" },
             specs: [
                 { label: "Conexão", value: "Bluetooth 5.3" },
@@ -206,9 +211,9 @@ window.CATALOGO_DEMO = Object.freeze({
             image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&q=88",
             gallery: ["https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&q=88"],
             shortDescription: "Estrutura resistente e opções de capacidade.",
-            description: "Demonstra variações aplicáveis a diversos produtos, com disponibilidade informada e seleção direta para atendimento.",
+            description: "Garrafa de aço inox com tampa rosqueável e conservação térmica. Disponível em duas capacidades e diferentes opções de cor.",
             price: 89.9,
-            priceNote: "Preço demonstrativo",
+            priceNote: "Valor anunciado",
             availability: { status: "available", label: "Disponível" },
             specs: [
                 { label: "Material", value: "Aço inox" },
@@ -232,9 +237,9 @@ window.CATALOGO_DEMO = Object.freeze({
             image: "https://images.unsplash.com/photo-1614632537190-23e4146777db?auto=format&fit=crop&w=1200&q=88",
             gallery: ["https://images.unsplash.com/photo-1614632537190-23e4146777db?auto=format&fit=crop&w=1200&q=88"],
             shortDescription: "Modelos para treino e uso recreativo.",
-            description: "Exemplo de variação por medida e modelo, mostrando que os atributos podem ser configurados de acordo com o produto.",
+            description: "Bola resistente para treinos e atividades recreativas. Consulte os modelos, medidas e prazo de disponibilidade antes de solicitar.",
             price: 119.9,
-            priceNote: "Preço demonstrativo",
+            priceNote: "Valor anunciado",
             availability: { status: "made-to-order", label: "Sob encomenda" },
             specs: [
                 { label: "Material", value: "PU laminado" },
@@ -258,7 +263,7 @@ window.CATALOGO_DEMO = Object.freeze({
             image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1200&q=88",
             gallery: ["https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1200&q=88"],
             shortDescription: "Composição personalizada com valor sob consulta.",
-            description: "Demonstra um item montado conforme a necessidade do cliente. A composição, o acabamento e o valor são definidos durante o atendimento.",
+            description: "Conjunto montado sob consulta, com opções de composição e acabamento. Os detalhes, o prazo e o valor são confirmados durante o atendimento.",
             price: null,
             priceNote: "Valor sob consulta",
             availability: { status: "made-to-order", label: "Produção sob consulta" },

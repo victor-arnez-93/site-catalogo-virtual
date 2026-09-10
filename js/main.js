@@ -5,6 +5,7 @@
     const service = window.CatalogService;
     const business = config.business;
     const catalogConfig = config.catalog;
+    const presentation = config.presentation || {};
     let cachedProducts = [];
     let cachedCategories = [];
     let lastSelectionTrigger = null;
@@ -22,6 +23,8 @@
     };
 
     const applySiteConfig = () => {
+        /* CORES CONFIGURÁVEIS DO CLIENTE */
+
         const themeMap = {
             "--ink": config.theme.primary,
             "--ink-deep": config.theme.primaryDeep,
@@ -47,6 +50,22 @@
             document.querySelectorAll(selector).forEach(element => { element.textContent = value; });
         });
 
+        /* ELEMENTOS EXCLUSIVOS DA DEMONSTRAÇÃO */
+
+        document.querySelectorAll("[data-demo-label]").forEach(element => {
+            element.textContent = presentation.demoLabel || "Demonstração de catálogo virtual";
+        });
+        document.querySelectorAll("[data-demo-message]").forEach(element => {
+            element.textContent = presentation.demoMessage || "Conteúdo ilustrativo para apresentação";
+        });
+        const showDemoBar = config.mode === "demo" && presentation.showDemoBar !== false;
+        document.querySelectorAll("[data-demo-bar]").forEach(element => {
+            element.hidden = !showDemoBar;
+        });
+        document.querySelectorAll("[data-crv-credit]").forEach(element => {
+            element.hidden = presentation.showCrvCredit === false;
+        });
+
         document.querySelectorAll("[data-business-email]").forEach(link => {
             link.textContent = business.email;
             link.href = `mailto:${business.email}`;
@@ -54,6 +73,33 @@
         document.querySelectorAll("[data-brand-home]").forEach(link => {
             link.setAttribute("aria-label", `${business.name} - Página inicial`);
         });
+
+        const pageNames = {
+            home: business.name,
+            catalogo: `Catálogo | ${business.name}`,
+            produto: `Produto | ${business.name}`
+        };
+        document.title = pageNames[document.body.dataset.page] || business.name;
+    };
+
+    /* AVISOS DE CONFIGURAÇÃO NO CONSOLE */
+
+    const logConfigurationStatus = () => {
+        const prefix = "[CRV Catálogo]";
+
+        console.info(`${prefix} Interface carregada com sucesso.`);
+
+        if (config.mode === "demo") {
+            console.info(`${prefix} Modo demonstração ativo.`);
+        }
+
+        if (!business.whatsapp || business.whatsapp === "5515999999999") {
+            console.warn(`${prefix} AVISO: substitua o WhatsApp demonstrativo em js/config.js antes da publicação.`);
+        }
+
+        if (!config.admin.enabled) {
+            console.info(`${prefix} Área administrativa desativada nesta versão.`);
+        }
     };
 
     const normalizeSelection = value => Array.isArray(value)
@@ -397,6 +443,46 @@
         }
     };
 
+    /* CARROSSÉIS DA PÁGINA INICIAL */
+
+    const setupCarousels = () => {
+        document.querySelectorAll("[data-carousel]").forEach(carousel => {
+            const track = carousel.querySelector("[data-carousel-track]");
+            const previousButton = carousel.querySelector("[data-carousel-previous]");
+            const nextButton = carousel.querySelector("[data-carousel-next]");
+
+            if (!track || !previousButton || !nextButton) return;
+
+            const updateButtons = () => {
+                const maximumScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+                const hasOverflow = maximumScroll > 2;
+
+                carousel.classList.toggle("has-overflow", hasOverflow);
+                previousButton.disabled = !hasOverflow || track.scrollLeft <= 2;
+                nextButton.disabled = !hasOverflow || track.scrollLeft >= maximumScroll - 2;
+            };
+
+            const move = direction => {
+                const firstCard = track.firstElementChild;
+                const styles = window.getComputedStyle(track);
+                const gap = Number.parseFloat(styles.columnGap || styles.gap) || 0;
+                const distance = firstCard ? firstCard.getBoundingClientRect().width + gap : track.clientWidth;
+
+                track.scrollBy({
+                    left: direction * distance,
+                    behavior: "smooth"
+                });
+            };
+
+            previousButton.addEventListener("click", () => move(-1));
+            nextButton.addEventListener("click", () => move(1));
+            track.addEventListener("scroll", updateButtons, { passive: true });
+            window.addEventListener("resize", updateButtons, { passive: true });
+
+            requestAnimationFrame(updateButtons);
+        });
+    };
+
     const renderHome = async () => {
         const categoriesTarget = document.querySelector("#home-categories");
         const productsTarget = document.querySelector("#home-products");
@@ -405,6 +491,7 @@
         categoriesTarget.innerHTML = cachedCategories.map(categoryCard).join("");
         productsTarget.innerHTML = cachedProducts.filter(product => product.featured).slice(0, 8).map(productCard).join("");
         refreshSelectionUI();
+        setupCarousels();
     };
 
     const init = async () => {
@@ -414,6 +501,7 @@
         setupGlobalEvents();
         if (document.body.dataset.page === "home") await renderHome();
         refreshSelectionUI();
+        logConfigurationStatus();
         requestAnimationFrame(animateVisibleContent);
     };
 

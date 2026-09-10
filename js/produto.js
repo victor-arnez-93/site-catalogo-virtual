@@ -87,7 +87,7 @@
                             <button class="button button--primary" type="button" id="product-whatsapp">Enviar pelo WhatsApp <span>↗</span></button>
                             <button class="button button--ghost" type="button" id="product-selection">Adicionar à seleção <span>＋</span></button>
                         </div>
-                        <p class="product-quote__disclaimer">Demonstração sem pagamento online. Disponibilidade, condições e entrega são confirmadas durante o atendimento.</p>
+                        <p class="product-quote__disclaimer">O envio da seleção não conclui a compra. Disponibilidade, condições e entrega são confirmadas durante o atendimento.</p>
                     </div>
                 </div>
             </div>`;

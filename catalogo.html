@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#003887">
-    <meta name="description" content="Explore uma demonstração de catálogo virtual com categorias, preços, disponibilidade e variações.">
-    <title>Catálogo | Demonstração CRV</title>
+    <meta name="description" content="Pesquise produtos, filtre por categoria e monte sua seleção.">
+    <title>Catálogo Virtual</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,12 @@
 </head>
 <body data-page="catalogo">
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-    <div class="demo-bar"><div class="container demo-bar__content"><span><span class="demo-dot"></span> Demonstração oficial CRV</span><span class="demo-bar__desktop">Estrutura adaptável a diferentes negócios</span></div></div>
+    <div class="demo-bar" data-demo-bar>
+        <div class="container demo-bar__content">
+            <span><span class="demo-dot"></span> <span data-demo-label>Demonstração de catálogo virtual</span></span>
+            <span class="demo-bar__desktop" data-demo-message>Conteúdo ilustrativo para apresentação</span>
+        </div>
+    </div>
 
     <header class="site-header" id="site-header">
         <div class="container header__inner">
@@ -31,7 +36,7 @@
             <div class="container">
                 <nav class="breadcrumbs" aria-label="Navegação estrutural"><a href="index.html">Início</a><span>/</span><strong>Catálogo</strong></nav>
                 <div class="catalog-intro__content">
-                    <div><span class="eyebrow">Produtos demonstrativos</span><h1>Encontre o que procura</h1></div>
+                    <div><span class="eyebrow">Todos os produtos</span><h1>Encontre o que procura</h1></div>
                     <p>Pesquise, filtre e monte sua seleção. Preços, disponibilidade e opções aparecem conforme a regra de cada produto.</p>
                 </div>
             </div>
@@ -65,15 +70,15 @@
 
         <section class="catalog-help">
             <div class="container catalog-help__card">
-                <div><span class="eyebrow">Catálogo sob medida</span><h2>Esta estrutura se adapta ao seu negócio.</h2><p>Categorias, produtos, identidade visual e recursos são definidos conforme a necessidade de cada empresa.</p></div>
-                <a class="button button--primary" href="#" data-whatsapp-generic>Solicitar uma demonstração <span aria-hidden="true">↗</span></a>
+                <div><span class="eyebrow">Precisa de ajuda?</span><h2>Fale com a nossa equipe.</h2><p>Envie sua dúvida pelo WhatsApp para confirmar opções, disponibilidade e condições.</p></div>
+                <a class="button button--primary" href="#" data-whatsapp-generic>Iniciar atendimento <span aria-hidden="true">↗</span></a>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer__grid"><div class="footer__brand"><a class="brand brand--footer" href="index.html" data-brand-home><span class="brand__symbol" data-business-symbol>C</span><span class="brand__text"><strong data-business-short-name>CATÁLOGO DEMO</strong><small data-business-descriptor>por CRV Soluções em TI</small></span></a><p data-business-description>Uma vitrine digital adaptável a diferentes negócios.</p></div><div class="footer__column"><strong>Navegação</strong><a href="index.html">Início</a><a href="catalogo.html">Catálogo</a><a href="index.html#como-funciona">Como funciona</a></div><div class="footer__column"><strong>Atendimento</strong><a href="#" data-whatsapp-generic>WhatsApp</a><a href="mailto:contato@crvsolucoesemti.com.br" data-business-email>contato@crvsolucoesemti.com.br</a><span data-business-hours>Seg. a sex. · 8h às 18h</span></div><div class="footer__column"><strong>Empresa</strong><a href="index.html#contato">Contato</a><a href="#" data-admin-link>Área restrita</a><span data-business-address>Tatuí · São Paulo</span></div></div>
-        <div class="container footer__bottom"><span>© <span data-current-year></span> <span data-business-name>Catálogo Demonstração</span>.</span><span>CRV-CATALOGO-COMMERCE · BASE 1.0</span></div>
+        <div class="container footer__grid"><div class="footer__brand"><a class="brand brand--footer" href="index.html" data-brand-home><span class="brand__symbol" data-business-symbol>C</span><span class="brand__text"><strong data-business-short-name>CATÁLOGO DEMO</strong><small data-business-descriptor>por CRV Soluções em TI</small></span></a><p data-business-description>Produtos organizados, informações claras e atendimento direto.</p></div><div class="footer__column"><strong>Navegação</strong><a href="index.html">Início</a><a href="catalogo.html">Catálogo</a><a href="index.html#como-funciona">Como funciona</a></div><div class="footer__column"><strong>Atendimento</strong><a href="#" data-whatsapp-generic>WhatsApp</a><a href="mailto:contato@crvsolucoesemti.com.br" data-business-email>contato@crvsolucoesemti.com.br</a><span data-business-hours>Seg. a sex. · 8h às 18h</span></div><div class="footer__column"><strong>Empresa</strong><a href="index.html#contato">Contato</a><a href="#" data-admin-link>Área restrita</a><span data-business-address>Tatuí · São Paulo</span></div></div>
+        <div class="container footer__bottom"><span>© <span data-current-year></span> <span data-business-name>Catálogo Demonstração</span>.</span><span data-crv-credit>Catálogo desenvolvido por CRV Soluções em TI</span></div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
