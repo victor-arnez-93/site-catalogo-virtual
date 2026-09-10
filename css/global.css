@@ -398,15 +398,34 @@ p {
     font-size: 17px;
 }
 
+/* CABEÇALHO CENTRALIZADO */
+
 .section-heading--center {
-    display: grid;
-    justify-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     text-align: center;
+}
+
+.section-heading--center > div {
+    width: 100%;
+    text-align: center;
+}
+
+.section-heading--center .eyebrow {
+    justify-content: center;
+}
+
+.section-heading--center h2 {
+    margin-inline: auto;
 }
 
 .section-heading--center > p {
     max-width: 640px;
-    margin: -25px auto 0;
+    margin: 0 auto;
 }
 
 .section-action {
